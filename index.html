@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Identitas</title>
+
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: cadetblue;
+        }
+
+        h2 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: aliceblue;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0,2);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        input[type="text"]
+        input[type="email"]
+        textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        }
+
+        input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+        background-color: #0056b3;
+        }
+
+        input[type="Reset"] {
+        background-color: #ff0000;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        }
+    
+        input[type="Reset"]:hover {
+        background-color: red;
+        }
+
+        input[type="Reset"]:hover {
+        background-color: #b30000;
+        }
+    </style>
+</head>
+<body>
+    <h2>IDENTITAS</h2>
+    <form action="proses_form.php" method="POST"> 
+        <label for="Nama Lengkap">Nama Lengkap</label>
+        <input type="text" name="Nama Lengkap" id="Nama Lengkap" size="52" required>
+        <br><br>
+
+        <label for="Nama Panggilan">Nama Panggilan</label>
+        <input type="text" name="Nama Lengkap" id="Nama Lengkap" size="52" required>
+        <br><br>
+
+        <label for="Tempat Tanggal Lahir">Tempat Tanggal Lahir</label>
+        <input type="text" name="Tempat Tanggal Lahir" id="Tempat Tanggal Lahir" size="52" required>
+        <br><br>
+
+        <label for="email">email:</label>
+        <input type="email" id="email" name="email" size="52" required> 
+        <br><br>
+
+        <label for="Password">Password:</label>
+        <input type="password" size="52">
+        <br><br>
+
+        <label for="Date">Tanggal Pengisian Form</label>
+        <input type="date">
+        
+    </form> <br>
+
+    <form action="">
+        jenis kelamin <br><br>
+        <input type="radio" name="jk" value="pria"> Laki-laki <br>
+        <input type="radio" name="jk" value="wanita"> Perempuan
+    </form> <br>
+
+    <form action="">
+        Ekstra yang Diminati <br><br>
+        <input type="checkbox"> Bola Basket <br>
+        <input type="checkbox"> Bola Voli <br>
+        <input type="checkbox"> Karate <br>
+        <input type="checkbox"> Futsal <br>
+        <input type="checkbox"> Taekwondo <br>
+        <input type="checkbox"> PMR <br>
+        <input type="checkbox"> Jepang <br>
+
+    </form> <br>
+
+    <form action="">
+        <label for="umur"></label>
+        <td>Umur</td>
+        <td><select>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+        </select>
+        </td>
+    </form> <br>
+
+    <form action="proses_form.php">
+        <label for="Makanan Favorit">Makanan Favorit</label>
+        <textarea></textarea>
+    </form> <br>
+
+    <form action="proses_form.php" method="POST"> 
+        <label for="Alasan kamu minat ke ekstra tersebut:">Alasan kamu minat ke ekstra tersebut</label>
+        <textarea></textarea>
+        <br><br><br>
+
+    </form> <br>
+
+    <form action="proses_form.php">
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Simpan"></td>
+            <td><input type="reset" value="Reset"></td>
+        </tr>
+    </form> <br>
+</body>
+</html>
